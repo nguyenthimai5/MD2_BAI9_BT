@@ -36,7 +36,7 @@ public class FizzBuzzTranslateTest {
     @Test
     @DisplayName("Test number")
     void getNumberStringTest01(){
-        String numberTestString="115";
+        String numberTestString="116";
         String expected="Buzz";
         FizzBuzzTranslate fizzBuzzTranslate=new FizzBuzzTranslate();
         String result=fizzBuzzTranslate.getNumberString(numberTestString);
@@ -46,7 +46,7 @@ public class FizzBuzzTranslateTest {
     @Test
     @DisplayName("Test number")
     void getNumberStringTest02(){
-        String numberTestString="116";
+        String numberTestString="113";
         String expected="Fizz";
         FizzBuzzTranslate fizzBuzzTranslate=new FizzBuzzTranslate();
         String result=fizzBuzzTranslate.getNumberString(numberTestString);

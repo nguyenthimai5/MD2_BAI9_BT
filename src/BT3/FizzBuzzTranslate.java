@@ -19,14 +19,12 @@ public class FizzBuzzTranslate {
 
     public String getNumberString(String numberString) {
         String numberStringFirst = numberString;
-        String numThree = "3";
-        String numFive = "5";
         String resultNumberString = "";
         for (int i = 0; i < numberStringFirst.length(); i++) {
-            if (numThree.equals(numberString)) {
+            if (numberString.charAt(i)=='3') {
                 resultNumberString = "Fizz";
 
-            } else if (numFive.equals(numberString)) {
+            } else if (numberString.charAt(i)=='5') {
                 resultNumberString = "Buzz";
             }
         }
