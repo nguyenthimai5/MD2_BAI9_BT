@@ -37,9 +37,20 @@ public class FizzBuzzTranslateTest {
     @DisplayName("Test number")
     void getNumberStringTest01(){
         String numberTestString="115";
+        String expected="Buzz";
+        FizzBuzzTranslate fizzBuzzTranslate=new FizzBuzzTranslate();
+        String result=fizzBuzzTranslate.getNumberString(numberTestString);
+        System.out.println(fizzBuzzTranslate.getNumberRead(Integer.parseInt(numberTestString)));
+        assertEquals(expected,result);
+    }
+    @Test
+    @DisplayName("Test number")
+    void getNumberStringTest02(){
+        String numberTestString="116";
         String expected="Fizz";
         FizzBuzzTranslate fizzBuzzTranslate=new FizzBuzzTranslate();
         String result=fizzBuzzTranslate.getNumberString(numberTestString);
+        System.out.println(fizzBuzzTranslate.getNumberRead(Integer.parseInt(numberTestString)));
         assertEquals(expected,result);
     }
 }
